@@ -12,6 +12,8 @@
             background-color: #f3f5ebfb;
             margin: 0;
             padding: 20px;
+            background-image: url('others/Lagos-780x585.jpg');
+            background-size: cover;
         }
         .nav-container {
             display: flex;
@@ -45,6 +47,7 @@
             padding: 20px;
             background-color: #fae4e4;
             align-items: center;
+            opacity: 0.9;
         }
         .video-div {
             display: flex;
@@ -67,6 +70,7 @@
             display: flex;
             flex-direction: row;
             margin-top: 10px;
+            opacity:0.9;
         }
         .work-section, .resume-section {
             flex: 1;
@@ -81,6 +85,7 @@
         .resume-table {
             width: 100%;
             border-collapse: collapse;
+            font-size: 15px;
         }
         .form-input-div-section {
             padding: 20px;
@@ -98,6 +103,10 @@
             text-align: center;
             margin-top: 20px;
         }
+        .form-input-section {
+            background-color: #fff;
+            opacity: 0.9;
+        }
     </style>
 </head>
 <body>
@@ -105,29 +114,35 @@
       <nav>
         <div class="nav-container"">
         <h1 class="nav-heading">Second Checkpoint !</h1>
+        <!--This is the Navigation bar-->
             <ul class="nav-list">
+                <li>
+                    <a href="#home" class="nav-list-item">Home</a>
+                </li>
                 <li>
                     <a href="#about" class="nav-list-item">About</a>
                 </li>
                 <li>
-                    <a href="#about" class="nav-list-item">Work</a>
+                    <a href="#work" class="nav-list-item">Work</a>
                 </li>
                 <li>
-                    <a href="#about" class="nav-list-item">Resume</a>
+                    <a href="#resume" class="nav-list-item">Resume</a>
                 </li>
                 <li>
-                    <a href="#about" class="nav-list-item">Contact US</a>
+                    <a href="#contactus" class="nav-list-item">Contact US</a>
                 </li>
             </ul>
         </div>
       </nav>
     </header>
+    <!--The body of the webpage starts here    -->
     <main>
         <section class="about-section">
             <div class="about-heading-div">
                 <h2 class="about-heading">About</h2>
                 <p class="about-paragraph">To learn about who we are, please watch the underlying video to learn more about what we offer.</p>
             </div>
+            <!-- Video section-->
             <div class="video-div">
                 <video class="video-section" src="others/sum-quarterly-data.mp4" width="600" height="400" controls>
                     Your browser does not support the video tag.
