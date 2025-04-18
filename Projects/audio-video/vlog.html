@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First HTML Project !</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f5ebfb;
+            margin: 0;
+            padding: 20px;
+            background-image: url('others/Lagos-780x585.jpg');
+            background-size: cover;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #676372;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        .nav-heading {
+            color: white;
+            font-size: 24px;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-list-item {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .nav-list-item:hover {
+            text-decoration: underline;
+        }
+        .about-section {
+            padding: 20px;
+            background-color: #fae4e4;
+            align-items: center;
+            opacity: 0.9;
+        }
+        .video-div {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .audio-div {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .about-heading-div {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .work-resume-section {
+            padding: 20px;
+            background-color: #e0f7fa;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            opacity:0.9;
+        }
+        .work-section, .resume-section {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .work-section{
+            text-align: center ;
+        }
+        .resume-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        .form-input-div-section {
+            padding: 20px;
+            background-color: #e0f7fa;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-heading-div-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .footer-section {
+            padding: 20px;
+            background-color: #e0f7fa;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-input-section {
+            background-color: #fff;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="nav-container"">
+        <h1 class="nav-heading">My Vlog !</h1>
+        <!--This is the Navigation bar-->
+            <ul class="nav-list">
+                <li>
+                    <a href="restaurant/restaurant.html" class="nav-list-item">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-list-item">About</a>
+                </li>
+                <li>
+                    <a href="#work" class="nav-list-item">Work</a>
+                </li>
+                <li>
+                    <a href="#resume" class="nav-list-item">Resume</a>
+                </li>
+                <li>
+                    <a href="#contactus" class="nav-list-item">Contact US</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <!--The body of the webpage starts here    -->
+    <main>
+        <section class="about-section">
+            <div class="about-heading-div">
+                <h2 class="about-heading">About</h2>
+                <p class="about-paragraph">To learn about who we are, please watch the underlying video to learn more about what we offer.</p>
+            </div>
+            <!-- Video section-->
+            <div class="video-div">
+                <video class="video-section" src="images/sum-quarterly-data.mp4" width="600" height="400" controls>
+                    Your browser does not support the video tag.
+            </video>
+            </div>
+            <div class="audio-div">
+                <audio controls>
+                    <source src="images/Mario - Let Me Love You.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+           
+        </section>
+        <section class="work-resume-section">
+            <div class="work-section">
+                <h2>Work</h2>
+                <p>This section provides an overview of work experience gained over the years.</p>
+            </div>
+            <!-- Resume section -->
+            <div class="resume-section">
+                <h2>Resume</h2>
+                <p>This section provides an overview of the resume.</p>
+            <div class="resume-section">
+                <h2>Resume</h2>
+                <table class="resume-table">
+                    <tr>
+                        <th>Year</th>
+                        <th>Role</th>
+                        <th>Experience</th>
+                        <th>Awards</th>
+                    </tr>
+                    <tr>
+                        <td>2006</td>
+                        <td>Computer Engr</td>
+                        <td>NYSC LG Pankshin</td>
+                        <td>Best NYSC Corp Member</td>
+                    </tr>
+                    <tr>
+                        <td>2009</td>
+                        <td>Marketing Executive</td>
+                        <td>Law Union Insurance</td>
+                        <td>Best Employee of the Year</td>                        
+                    </tr>
+                    <tr>
+                        <td>2010</td>
+                        <td>Program Analyst</td>
+                        <td>Lagos State Government</td>
+                        <td>Best Performing Staff</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <!-- Contact Us section -->
+        <section class="form-input-section">
+            <div class="form-heading-div-section">
+                <h2>Contact Us</h2>
+                <p>Kindly take time to fill up the form below. We are happy to help you!</p>
+            </div>
+            <div class="form-input-div-section">
+                <form action="" class="form-input-section">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-name" name="name" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-email" name="email" required>
+                    <br><br>
+                    <label for="message">Message:</label>
+                    <textarea class="form-message" name="message" rows="4" cols="50"></textarea>
+                    <br><br>
+                    <input type="submit" value="Submit" class="form-submit">
+                </form>
+            </div>
+        </section>
+        <!-- Footer section -->
+        <section class="footer-section">
+            <h2>Sample Code</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    </main>
+    <footer>
+        <p>&copy; 2025 GOMYCode Project</p>
+    </footer>
+</html>
