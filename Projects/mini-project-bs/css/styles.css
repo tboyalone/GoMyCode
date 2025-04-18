@@ -1,8 +1,40 @@
+
 @media screen and (max-width: 768px) {
     .main-container {
-        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
     }
 
+/*@media screen and (max-width: 480px) {
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }    
+    }*/
+
+      /*  @media screen and (max-width: 1024px) {
+            .main-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            } */
+
+       /* @media screen and (min-width: 1201px) {
+            .main-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }*/
     .section-one {
         display: flex;
             flex-direction: column;
